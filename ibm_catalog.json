@@ -154,7 +154,7 @@
                 {
                     "label": "Standard",
                     "name": "standard",
-                    "install_type": "extension",
+                    "install_type": "fullstack",
                     "working_directory": "solutions/apache-workload/extension",
                     "usage_template": "module \"custom_apache\" {\n source                    = \"https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/offering/source//${{workingDirectory}}?archive=tgz&catalogID=${{catalogID}}&flavor=${{flavor}}&kind=${{kind}}&name=${{name}}&version=${{version}}\"\n  ibmcloud_api_key          = var.ibmcloud_api_key\n  prerequisite_workspace_id = var.prerequisite_workspace_id\n  ssh_private_key          =var.ssh_private_key\n}\n\n",
                     "scripts": [	
